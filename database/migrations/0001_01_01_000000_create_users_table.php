@@ -16,7 +16,6 @@ return new class extends Migration
             $table->string('nama');
             $table->string('username')->unique();
             $table->string('email')->unique();
-            // $table->timestamp('email_verified_at')->nullable();
             $table->string('password');
             $table->enum('grup',['admin','kos','overkos']);
             $table->rememberToken();
